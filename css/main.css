@@ -199,11 +199,28 @@ img {
 .functions-list {
   display: flex;
 }
-.functions-icon {
-  background: var(--secondary-bg-color);
-  padding: 25px 100px;
+.functions-list .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
   border-radius: 4px;
   margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 .functions-list .item {
   width: 270px;
