@@ -60,8 +60,8 @@ img {
 
 /* logo */
 .logo {
-  padding-top: 33px;
-  padding-bottom: 16px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -94,8 +94,8 @@ img {
 }
 .site-nav .link {
   display: block;
-  padding-top: 41px;
-  padding-bottom: 23px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -116,8 +116,8 @@ img {
 .contact-list {
   display: flex;
   align-items: center;
-  padding-top: 41px;
-  padding-bottom: 23px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-list .item + .item {
@@ -132,18 +132,23 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contact-icon {
-  margin-right: 10px;
-}
-.contact-icon:hover,
-.contact-icon:focus {
-  color: var(--accent);
-}
+
 .contact-nav:hover,
 .contact-nav:focus {
   color: var(--accent);
 }
-
+.nav-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.mail .nav-icon {
+  width: 16px;
+  height: 11.2px;
+}
+.tel .nav-icon {
+  width: 10px;
+  height: 15px;
+}
 /* Hero */
 .overlay {
   max-width: 1600px;
@@ -199,7 +204,7 @@ img {
 .functions-list {
   display: flex;
 }
-.functions-list .item::before {
+/* .functions-list .item::before {
   display: block;
   content: '';
   height: 120px;
@@ -221,7 +226,7 @@ img {
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 .functions-list .item {
   width: 270px;
 }
@@ -430,20 +435,29 @@ address {
   text-transform: uppercase;
 }
 .button-footer {
-  display: inline-block;
+  display: inline-flex;
   border: 1px solid transparent;
   min-width: 200px;
-  padding: 10px 62px 10px 29px;
+  padding: 10px 29px 10px 29px;
   background-color: var(--accent);
   color: var(--title-white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  text-align: center;
+  align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+/* .button-footer::after {
+  display: inline-flex;
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/plane.svg);
+  background-size: contain;
+  margin-left: 10px;
+} */
 .copyright {
   display: block;
   font-size: 12px;
