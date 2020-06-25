@@ -6,6 +6,7 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --icon-color: #afb1b8;
 }
 
 .visually-hidden {
@@ -343,14 +344,29 @@ img {
   justify-content: center;
 }
 .social-link {
-  color: var(--title-text-color);
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--icon-color);
 }
 .social-list .item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link:hover,
-.social-link:focus {
-  color: var(--accent);
+.social-list .social-link:hover,
+.social-list .social .link:focus {
+  background-color: var(--accent);
+}
+.social-list .social-link:hover .social-icon,
+.social-list .social .link:focus .social-icon {
+  fill: var(--title-white-color);
+}
+.social-icon {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 /* Clients */
 .clients {
