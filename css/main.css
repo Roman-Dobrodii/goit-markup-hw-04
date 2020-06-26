@@ -7,6 +7,7 @@
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --icon-color: #afb1b8;
+  --footer-bg-socicon: rgba(255, 255, 255, 0.1);
 }
 
 .visually-hidden {
@@ -355,7 +356,9 @@ img {
   margin-right: 10px;
 }
 .social-list .social-link:hover,
-.social-list .social .link:focus {
+.social-list .social-link:focus,
+.join-list .social-link:hover,
+.join-list .social-link:focus {
   background-color: var(--accent);
 }
 .social-list .social-link:hover .social-icon,
@@ -367,6 +370,12 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+.join .social-link {
+  background-color: var(--footer-bg-socicon);
+}
+.join .social-icon {
+  fill: var(--title-white-color);
 }
 /* Clients */
 .clients {
@@ -453,7 +462,7 @@ address {
   align-items: center;
   justify-content: center;
 }
-.join-list .join-item:not(:last-child) {
+.join-list .item:not(:last-child) {
   margin-right: 10px;
 }
 .subscribe-title {
