@@ -484,7 +484,7 @@ address {
   margin-right: 10px;
 }
 .subscribe-title {
-  display: inline-block;
+  display: block;
   color: var(--title-white-color);
   margin-bottom: 20px;
   font-weight: 700;
@@ -507,15 +507,12 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-/* .button-footer::after {
-  display: inline-flex;
-  content: '';
+.subscribe-icon {
+  margin-left: 10px;
   width: 24px;
   height: 24px;
-  background-image: url(../images/plane.svg);
-  background-size: contain;
-  margin-left: 10px;
-} */
+  fill: currentColor;
+}
 .copyright {
   display: block;
   font-size: 12px;
